@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>2020遇见美好的你</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/swiper.min.css">
@@ -176,7 +177,7 @@
     <!-- Add Pagination -->
     <!--<div class="swiper-pagination"></div>-->
     <div class="touchBtn">
-        <img src="img/touchbtn.gif" alt="">
+        <img src="img/touchbtn.gif" alt="" class="touchIt">
     </div>
 </div>
 <script src="js/swiper.min.js"></script>
@@ -187,6 +188,9 @@
             el: '.swiper-pagination',
             clickable: true,
         },
+        navigation:{
+            nextEl:'.touchIt'
+        }
     });
 </script>
 </body>
