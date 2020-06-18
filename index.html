@@ -176,7 +176,7 @@
     </div>
     <!-- Add Pagination -->
     <!--<div class="swiper-pagination"></div>-->
-    <div class="touchBtn">
+    <div class="touchBtn ">
         <img src="img/touchbtn.gif" alt="" class="touchIt">
     </div>
 </div>
@@ -190,6 +190,16 @@
         },
         navigation:{
             nextEl:'.touchIt'
+        },
+        //滑到最后一个隐藏前进按钮
+        on: {
+            slideChangeTransitionEnd: function(){
+                if(this.isEnd){
+                    this.navigation.$nextEl.css('display','none');
+                }else{
+                    this.navigation.$nextEl.css('display','inline-block');
+                }
+            }
         }
     });
 </script>

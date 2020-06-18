@@ -111,3 +111,6 @@ body {
 .red{
     color: red!important;
 }
+.swiper-button-disabled{
+    display:none;
+}
