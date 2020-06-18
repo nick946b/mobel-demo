@@ -96,7 +96,7 @@ body {
     width: 66%;
 }
 .textContent p{
-    font-family: fzk;
+    font-family: fzk!important;
     margin-top: 5px;
 }
 .textContent i{
