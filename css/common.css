@@ -64,9 +64,11 @@ body {
     bottom: 25px;
     z-index: 99999;
     text-align: center;
+    outline: none;
 }
 .touchBtn img{
     width: 20%;
+    outline: none;
 }
 .textContent{
     width: 70%;
